@@ -11,7 +11,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Booking", "Booking", "{788B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Booking.API", "Booking.API\Booking.API.csproj", "{652874FA-3FCC-4AB6-9F3E-CDAFCF1D9D0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImagineLinesWebSPA", "ImagineLinesWebSPA\ImagineLinesWebSPA.csproj", "{600C1E40-60FB-44F3-A93F-31E6C51437F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImagineLinesWebSPA", "ImagineLinesWebSPA\ImagineLinesWebSPA.csproj", "{600C1E40-60FB-44F3-A93F-31E6C51437F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{7F4AB8CD-4238-48E1-8F56-78C7567F7269}"
+	ProjectSection(SolutionItems) = preProject
+		..\Booking.bak = ..\Booking.bak
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
