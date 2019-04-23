@@ -1,0 +1,41 @@
+<mat-form-field>
+  <input (dateInput)="startDateEvent('input', $event)" (dateChange)="startDateEvent('change', $event)" [min]="minDate" [max]="maxDate" matInput [matDatepicker]="picker1" placeholder="Start Date" [formControl]="startDate">
+  <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+  <mat-datepicker #picker1></mat-datepicker>
+</mat-form-field>
+
+<mat-form-field>
+  <input (dateInput)="endDateEvent('input', $event)" (dateChange)="endDateEvent('change', $event)" [min]="minDate" [max]="maxDate" matInput [matDatepicker]="picker2" placeholder="End Date" [formControl]="endDate">
+  <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+  <mat-datepicker #picker2></mat-datepicker>
+</mat-form-field>
+
+<mat-form-field>
+  <input [formControl]="bookingId" matInput type="text" placeholder="Booking Id">
+</mat-form-field>
+
+<mat-form-field>
+  <input [formControl]="shipName" matInput type="text" placeholder="Ship Name">
+</mat-form-field>
+
+<button mat-raised-button (click)="searchEvent()">Search</button>
+
+<p *ngIf="!bookings"><em>Loading...</em></p>
+
+<table class='table' *ngIf="bookings">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Country</th>
+      <th>Total Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let booking of bookings.json()">
+      <td *ngIf="booking.bookings.length > 0">{{ booking.name }}</td>
+      <td *ngIf="booking.bookings.length > 0">{{ booking.country }}</td>
+      <td *ngIf="booking.bookings.length > 0">{{ booking.totalPrice | currency: booking.currency:"symbol-narrow" }}</td>
+      <td *ngIf="booking.bookings.length > 0"><button (click)="openBookingDetail(booking.bookings,booking.currency)">Details</button></td>
+    </tr>
+  </tbody>
+</table>

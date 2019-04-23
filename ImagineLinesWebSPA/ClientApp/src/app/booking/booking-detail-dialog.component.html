@@ -1,0 +1,23 @@
+<p *ngIf="!data.bookings"><em>Loading...</em></p>
+
+<div mat-dialog-content>
+  <table class='table table-striped' *ngIf="data.bookings">
+    <thead>
+      <tr>
+        <th>Booking Id</th>
+        <th>Ship Name</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let booking of data.bookings">
+        <td>{{ booking.id }}</td>
+        <td>{{ booking.ship.name }}</td>
+        <td>{{ booking.price | currency: data.currency:"symbol-narrow" }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div mat-dialog-actions dir="rtl">
+  <button mat-button (click)="onNoClick()">Close</button>
+</div>

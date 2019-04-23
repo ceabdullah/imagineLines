@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.156
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{7EF1DEF9-CC5B-447B-87BB-C74E59344FEF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApps", "WebApps", "{F8E2CF05-C542-42B2-81B9-06861BEA6D91}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Booking", "Booking", "{788BFD04-D715-4D91-82C2-8B0DD3277206}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Booking.API", "Booking.API\Booking.API.csproj", "{652874FA-3FCC-4AB6-9F3E-CDAFCF1D9D0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImagineLinesWebSPA", "ImagineLinesWebSPA\ImagineLinesWebSPA.csproj", "{600C1E40-60FB-44F3-A93F-31E6C51437F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{652874FA-3FCC-4AB6-9F3E-CDAFCF1D9D0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{652874FA-3FCC-4AB6-9F3E-CDAFCF1D9D0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{652874FA-3FCC-4AB6-9F3E-CDAFCF1D9D0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{652874FA-3FCC-4AB6-9F3E-CDAFCF1D9D0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{600C1E40-60FB-44F3-A93F-31E6C51437F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{600C1E40-60FB-44F3-A93F-31E6C51437F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{600C1E40-60FB-44F3-A93F-31E6C51437F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{600C1E40-60FB-44F3-A93F-31E6C51437F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{788BFD04-D715-4D91-82C2-8B0DD3277206} = {7EF1DEF9-CC5B-447B-87BB-C74E59344FEF}
+		{652874FA-3FCC-4AB6-9F3E-CDAFCF1D9D0C} = {788BFD04-D715-4D91-82C2-8B0DD3277206}
+		{600C1E40-60FB-44F3-A93F-31E6C51437F7} = {F8E2CF05-C542-42B2-81B9-06861BEA6D91}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2AF56C5F-9515-4140-A24B-E5EC6C33F45D}
+	EndGlobalSection
+EndGlobal
