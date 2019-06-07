@@ -24,10 +24,15 @@ namespace ImagineLinesWebSPA
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
+            services.AddNodeServices(options =>
+            {
+                options.ProjectPath = System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(), "ClientApp");
+            });
+
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
-                configuration.RootPath = "ClientApp/dist";
+                configuration.RootPath = System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(), "ClientApp/dist");
             });
         }
 
@@ -61,7 +66,7 @@ namespace ImagineLinesWebSPA
                 // To learn more about options for serving an Angular SPA from ASP.NET Core,
                 // see https://go.microsoft.com/fwlink/?linkid=864501
 
-                spa.Options.SourcePath = "ClientApp";
+                spa.Options.SourcePath = System.IO.Path.Join(env.ContentRootPath, "ClientApp");
 
                 if (env.IsDevelopment())
                 {

@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  imaginelineswebspa:
+    image: ${DOCKER_REGISTRY-}imaginelineswebspa
+    build:
+      context: .
+      dockerfile: ImagineLinesWebSPA\Dockerfile

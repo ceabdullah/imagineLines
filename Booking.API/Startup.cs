@@ -63,7 +63,7 @@ namespace Booking.API
             }
 
             app.UseCors(builder =>
-                builder.WithOrigins("https://localhost:44338"));
+                builder.WithOrigins("https://localhost:44339"));
 
             app.UseSwagger();
 
