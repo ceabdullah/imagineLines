@@ -2,10 +2,10 @@
 <Project ToolsVersion="15.0" Sdk="Microsoft.Docker.Sdk">
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
-    <DockerTargetOS>Windows</DockerTargetOS>
-    <ProjectGuid>62469d42-a295-49b5-a9c4-5f1e6e85732a</ProjectGuid>
+    <DockerTargetOS>Linux</DockerTargetOS>
+    <ProjectGuid>1b863868-a6fe-4904-afb1-b359e3f05915</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
-    <DockerServiceUrl>{Scheme}://{ServiceIPAddress}{ServicePort}/booking</DockerServiceUrl>
+    <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/booking</DockerServiceUrl>
     <DockerServiceName>imaginelineswebspa</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
